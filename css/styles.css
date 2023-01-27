@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+
+body{
+    height: 300rem;
+}
+
+:root{
+    /* fuentes */
+    --font-family:'Roboto Condensed', sans-serif;
+
+    /* tamaños */
+    --lg: 5rem;
+    --md: 3rem;
+    --sm: 1.5rem;
+
+    /* colores: no mas de 3 (amenos que sean neutros, estos pueden ser usados muchos) */
+
+}
+
+
+
+header h1{
+    color: black; 
+    font-size: var(--lg);
+    font-weight: 300;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+header p{
+    text-align: center;
+    color: rgb(8, 131, 8);
+    font-size: 2.1rem;
+    margin-bottom: 3rem;
+    
+}
+
+
+
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0fbab7;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+}
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    transition: all .5s;
+}
+
+nav li a:hover{
+    
+    color: white;
+}
+
+
+
+/* main cointainer */
+
+.container{
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-size: var(--sm);
+    margin-top: 2rem;
+
+}
+
+#title-Q{
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.Q-content{
+    line-height: 2.4rem;
+}

@@ -1,0 +1,38 @@
+@media (min-width: 800px){
+
+    /* la barra */
+
+    main .main-input{
+        width: 575px; 
+    }
+
+    main .main-input-container{
+        
+        width: 570px;
+    
+    }
+
+    main .main-input-container input{
+        width: 505px;
+
+    }
+
+    /* footer */
+
+    footer ul{
+    
+        flex-direction: row;
+        
+    
+    }
+    footer ul{
+        padding-left: 0;
+    }
+    footer ul li{
+        margin-right: 12px;
+    }
+
+    footer .footer-right{
+        justify-content: flex-end;
+    }
+}
