@@ -1,99 +1,112 @@
+:root{
+    --textos: #6b7280;
+    --titulo-negro: #111827;
+    --morado: #4f46e5;
+    --gris-BG: #f2f2f2;
+}
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html{
     font-size: 62.5%;
-    font-family: var(--font-family);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
 
 body{
-    height: 300rem;
-}
-
-:root{
-    /* fuentes */
-    --font-family:'Roboto Condensed', sans-serif;
-
-    /* tamaños */
-    --lg: 5rem;
-    --md: 3rem;
-    --sm: 1.5rem;
-
-    /* colores: no mas de 3 (amenos que sean neutros, estos pueden ser usados muchos) */
-    --background: #f2f2f2;
+    height: 1000px;
 }
 
 
-header{
-    background-color: var(--background);
-}
+/* nav principal */
 
-header h1{
-    color: black; 
-    font-size: var(--lg);
-    font-weight: 300;
-    text-align: center;
-    padding-top: 4rem;
-}
-
-header p{
-    text-align: center;
-    color: rgb(8, 131, 8);
-    font-size: 2.1rem;
-    margin-bottom: 3rem;
-    
-}
-
-
-
-
-/* nav */
-nav{
+.nav-principal{
+    width: 100%;
+    height: 6rem;
     display: flex;
-    justify-content: space-around;
-    background-color: #0fbab7;
-    padding: 1.5rem 0;
+    
+    font-size: 1.6rem;
+    font-weight: 500;
+
     position: sticky;
     top: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+
+    min-width: 375px;
+    
+
 }
-nav li{
+.nav-principal ul{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-principal ul li{
     list-style: none;
 }
 
-nav li a{
+.nav-principal ul li a{
     text-decoration: none;
-    font-size: 1.7rem;
-    color: black;
-    transition: all .5s;
-}
-
-nav li a:hover{
+    color: var(--textos);
     
-    color: white;
 }
 
+.nav-principal ul li a:hover{
+    color: var(--morado);
+    
+}
 
+/* Header */
 
-/* main cointainer */
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3.5rem;
+    border-bottom: 1px solid gray;
+    min-width: 375px;
 
-.container{
-    width: 100%;
-    border: 1px solid black;
+    
+}
+
+.cabecera h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.cabecera h1 span{
+    color: var(--morado);
+}
+.cabecera h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+.cabecera p{
+    
+    width: 33rem;
+    
     margin: 0 auto;
-    font-size: var(--sm);
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
 }
 
-#title-Q{
-    margin-bottom: 2rem;
-    font-weight: 400;
+.cabecera .imagen-perfil{
+    margin-top: 3rem;
+    
 }
 
-.Q-content{
-    line-height: 2.4rem;
+.cabecera .imagen-perfil img{
+    border-radius: 50%;
+    width: 20rem;
+    margin-bottom: 13.2rem;
 }
