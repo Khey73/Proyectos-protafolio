@@ -1,0 +1,197 @@
+@media (max-width: 1250px){
+    .wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-articulos-general{
+        margin: 0 auto !important;
+        width: 100%;
+    }
+
+
+    /* banner */
+    #banner h1{
+        width: 100%;
+    }
+    /* header nav */
+    #header nav{
+        width: 90%;
+    }
+
+    /* articulos */
+    .ultimos-articulos, .articulos-contenedor .articulo{
+        width: 100%;
+    }
+
+    /* aside bar */
+
+    .aside-bar{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-buscar{
+        box-shadow: black -2px 2px 3px;
+    }
+    .contenedor-aside{
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid black;
+        
+    }
+
+    .card{
+        width: 90%;
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    
+    }
+
+
+
+    #footer{
+        margin-top: 80px;
+        
+    }
+}
+
+
+
+
+@media (max-width: 850px){
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* footer */
+
+
+
+    
+
+}
+
+/* media personalizado footer */
+@media (max-width: 987px){
+    #footer{
+        height: auto;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    
+        justify-content: center;
+    }
+
+    .optimizado-imgs{
+        display: flex;
+    }
+
+    .footer-container div{
+        width: 60%;
+        margin-top: 32px;
+    
+    }
+
+    .autor-footer .footer-titulo{
+        margin-top: 30px;
+    }
+
+    .footer-container div{
+        margin-left: 28px;
+    }
+
+    .footer-row-3{
+        margin-left: -10px !important;
+    }
+}
+/* NAV */
+@media (max-width: 711px){
+    #header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    #menu{
+        display: none;
+    }
+    #icon-hamburger{
+        display: block;
+        background-color: black;
+        cursor: pointer;
+    }
+    #icon-hamburger img{
+        width: 70px;
+        
+    }
+    #mobile-nav{
+        z-index: 999;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .card{
+        width: 90%;
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr  ;
+    }
+
+    /*  ASIDE BAR*/
+
+    .aside-bar{
+        
+    }
+    .contenedor-aside{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 2px solid black;
+        
+    }
+
+    /* Footer */
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        justify-content: center;
+    }
+
+    .footer-row-3{
+        margin-left: 39px !important;
+    }
+
+    .footer-row-3 .imgs-container{
+        margin-left: 10px !important;
+    }
+
+    .autor-footer{
+        margin-left: 69px !important;
+    }
+
+    .menu-container{
+        margin-left: 70px !important;
+    }
+}
+
+/* google map */
+@media (max-width: 574px){
+    
+}
